@@ -2,15 +2,15 @@ import axios from "axios";
 
 export default {
 	getSteps: () => {
-		return axios.get("http://localhost:8080/api/steps");
+		return axios.get("https://workout-list-java.herokuapp.com/api/steps");
 	},
 	saveStep: (step) => {
-		return axios.post("http://localhost:8080/api/steps", step);
+		return axios.post("https://workout-list-java.herokuapp.com/api/steps", step);
 	},
 	updateStep: (step) => {
-		return axios.put("http://localhost:8080/api/steps/" + step.id , step);
+		return axios.put("https://workout-list-java.herokuapp.com/api/steps/" + step.id , step);
 	},
 	deleteStep: (step) => {
-		return axios.delete("http://localhost:8080/api/steps/" + step.id);
+		return axios.delete("https://workout-list-java.herokuapp.com/api/steps/" + step.id);
 	}
 }
