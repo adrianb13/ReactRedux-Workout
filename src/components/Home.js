@@ -22,7 +22,6 @@ class Home extends React.Component {
 		this.dataLoad();
 	}
 	componentDidUpdate(nextProps){
-		console.log(nextProps.steps)
 		if(this.props.steps !== nextProps.steps){
 			this.dataLoad();
 		}
@@ -33,17 +32,15 @@ class Home extends React.Component {
 	}
 		
 	dataLoad = () => {
-		console.log("dataLoad")
 		if(this.props.steps){
 			this.setState({
 				steps: this.props.steps
 			}, () => {
-				console.log(this.state.steps.length)
 				if(this.state.steps.length > 0){
 					this.setState({
 						loaded: true
 					}, () => {
-						console.log("loading")
+						console.log("loaded")
 					})
 				}
 			})
@@ -54,7 +51,6 @@ class Home extends React.Component {
 		this.props.actions.deleteStep(step)
 		.then(res => {
 			this.dataLoad();
-			console.log(res);
 		})
 	}
 	
@@ -82,12 +78,10 @@ class Home extends React.Component {
 		this.setState({
 			step: step
 		}, () => {
-			console.log(this.state.step)
 			const list = this.state.steps;
 			const item = list.filter(step => step.id === this.state.step.id)
 			const index = list.indexOf(item[0]);	
 			list.splice(index, 1, this.state.step)
-			console.log(list)
 			this.setState({
 				steps: list
 			})
@@ -174,7 +168,6 @@ const mapStateToProps = state => {
 	} else {
 		return { steps: [{id: null, name: "", reps: null, description: ""}]};
 	}*/
-	console.log(state.steps)
 	return { steps: state.steps}
 }
 

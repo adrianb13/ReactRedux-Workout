@@ -42,9 +42,7 @@ class Update extends React.Component {
 			reps: parseInt(this.state.reps),
 			description: this.state.description
 		})
-		.then(res => {
-			//this.props.updateStep(res.data)
-			console.log(res.data)})
+		.then(res => {console.log(res)})
 		.catch(err => console.log(err))
 		this.props.updateButton();
 	}
