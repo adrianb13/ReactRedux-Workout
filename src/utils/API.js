@@ -14,3 +14,6 @@ export default {
 		return axios.delete("https://workout-list-java.herokuapp.com/api/steps/" + step.id);
 	}
 }
+
+//http://localhost:8080/api/steps
+//https://workout-list-java.herokuapp.com/api/steps
