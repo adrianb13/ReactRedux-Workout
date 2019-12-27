@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ReactRedux-Workout/static/css/main.a28b17db.chunk.css",
-    "main.js": "/ReactRedux-Workout/static/js/main.1d54c642.chunk.js",
-    "main.js.map": "/ReactRedux-Workout/static/js/main.1d54c642.chunk.js.map",
+    "main.js": "/ReactRedux-Workout/static/js/main.d260aaf6.chunk.js",
+    "main.js.map": "/ReactRedux-Workout/static/js/main.d260aaf6.chunk.js.map",
     "runtime-main.js": "/ReactRedux-Workout/static/js/runtime-main.578d104a.js",
     "runtime-main.js.map": "/ReactRedux-Workout/static/js/runtime-main.578d104a.js.map",
     "static/js/2.af3d9a3a.chunk.js": "/ReactRedux-Workout/static/js/2.af3d9a3a.chunk.js",
     "static/js/2.af3d9a3a.chunk.js.map": "/ReactRedux-Workout/static/js/2.af3d9a3a.chunk.js.map",
     "index.html": "/ReactRedux-Workout/index.html",
-    "precache-manifest.23b8fc862e902d375395f00e8df9f97a.js": "/ReactRedux-Workout/precache-manifest.23b8fc862e902d375395f00e8df9f97a.js",
+    "precache-manifest.c5e327ed24599ae207653d3b27ec731d.js": "/ReactRedux-Workout/precache-manifest.c5e327ed24599ae207653d3b27ec731d.js",
     "service-worker.js": "/ReactRedux-Workout/service-worker.js",
     "static/css/main.a28b17db.chunk.css.map": "/ReactRedux-Workout/static/css/main.a28b17db.chunk.css.map",
     "static/js/2.af3d9a3a.chunk.js.LICENSE": "/ReactRedux-Workout/static/js/2.af3d9a3a.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.578d104a.js",
     "static/js/2.af3d9a3a.chunk.js",
     "static/css/main.a28b17db.chunk.css",
-    "static/js/main.1d54c642.chunk.js"
+    "static/js/main.d260aaf6.chunk.js"
   ]
 }
