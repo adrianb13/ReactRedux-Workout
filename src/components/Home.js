@@ -92,42 +92,47 @@ class Home extends React.Component {
 		return(
 			<div className="back">
 				<div>
-					<h1 className="header">Workout Routine</h1>
-					<div className="container-table">
-						<table className="table">
-							<thead>
-								<tr>
-									<th id="tId">Name</th>
-									<th id="tReps">Reps</th>
-									<th id="tDesc">Description</th>
-									<th id="tUpd">Update</th>
-									<th id="tDel">Delete</th>
-								</tr>
-							</thead>
-							{this.state.loaded ? (
-								<tbody>
-								{this.state.steps.map( step => (
-									<tr key={step.id}>
-										<td>{step.name}</td>
-										<td id="tReps">{step.reps}</td>
-										<td>{step.description}</td>
-										<td id="bUpd" onClick={() => this.findOne(step)}>Update</td>
-										<td id="bDel" onClick={() => this.deleteStep(step)}>Delete</td>
-									</tr>
-								))}
-								</tbody>
-							) : (
-								<tbody>
+					<h1 className="title">Workout Routine</h1>
+					<div id="sloganBox">
+						<div id="slogan">Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
+					</div>
+					<div>
+						<div className="container-table">
+							<table className="table">
+								<thead>
 									<tr>
-										<td> </td>
-										<td> </td>
-										<td> </td>
-										<td> </td>
-										<td> </td>
+										<th id="tId">Name</th>
+										<th id="tReps">Reps</th>
+										<th id="tDesc">Description</th>
+										<th id="tUpd">Update</th>
+										<th id="tDel">Delete</th>
 									</tr>
-								</tbody>
-							)}
-						</table>
+								</thead>
+								{this.state.loaded ? (
+									<tbody>
+									{this.state.steps.map( step => (
+										<tr key={step.id}>
+											<td>{step.name}</td>
+											<td id="tReps">{step.reps}</td>
+											<td>{step.description}</td>
+											<td id="bUpd" onClick={() => this.findOne(step)}>Update</td>
+											<td id="bDel" onClick={() => this.deleteStep(step)}>Delete</td>
+										</tr>
+									))}
+									</tbody>
+								) : (
+									<tbody>
+										<tr>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+									</tbody>
+								)}
+							</table>
+						</div>
 						<div>
 							{this.state.update ? (
 								<Update

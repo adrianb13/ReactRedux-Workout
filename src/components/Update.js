@@ -53,15 +53,15 @@ class Update extends React.Component {
 				<div id="updCont" onChange={this.stepInfo}>
 					<h2>Updating "{this.props.step.name}"</h2>
 					<div>
-						<div className="header">New Name:</div>
+						<div className="header tag">New Name:</div>
 						<input name="name" placeholder={this.props.step.name}></input>
 					</div>
 					<div>
-						<div className="header">New Rep Count:</div>
+						<div className="header tag">New Rep Count:</div>
 						<input name="reps" placeholder={this.props.step.reps}></input>
 					</div>
 					<div>
-						<div className="header">New Description:</div>
+						<div className="header tag">New Description:</div>
 						<textarea name="description" placeholder={this.props.step.description}></textarea>
 					</div>
 					<button className="bAdd" onClick={this.updateStep}>Update</button>

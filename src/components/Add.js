@@ -52,15 +52,15 @@ class Add extends React.Component {
 				<div onChange={this.stepInfo}>
 					<div>{this.state.message}</div>
 					<div>
-						<div className="header">Name:</div>
+						<div className="header tag">Name:</div>
 						<input name="name"></input>
 					</div>
 					<div>
-						<div className="header">Reps:</div>
+						<div className="header tag">Reps:</div>
 						<input name="reps"></input>
 					</div>
 					<div>
-						<div className="header">Description:</div>
+						<div className="header tag">Description:</div>
 						<textarea name="description"></textarea>
 					</div>
 				</div>
