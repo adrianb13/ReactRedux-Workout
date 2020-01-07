@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actions from "../actions/index.js";
@@ -15,11 +15,13 @@ class Home extends React.Component {
 			steps: [],
 			step: {},
 			loaded: false,
-			add: false
+			add: false,
+			arms: true
 		}
 	}
 	componentDidMount = () => {
 		this.dataLoad();
+		this.interval();
 	}
 	componentDidUpdate(nextProps){
 		if(this.props.steps !== nextProps.steps){
@@ -45,6 +47,19 @@ class Home extends React.Component {
 				}
 			})
 		}
+	}
+
+	interval = () => {
+    let intervalId = setInterval(this.arms, 1000)
+    this.setState({
+      intervalId: intervalId
+    })
+	};
+	
+	arms = () => {
+		this.setState({
+			arms: !this.state.arms
+		})
 	}
 			
 	deleteStep = (step) => {
@@ -93,8 +108,21 @@ class Home extends React.Component {
 			<div className="back">
 				<div>
 					<h1 className="title">Workout Routine</h1>
+					<div id="imgCont">
+						<div id="imgBox">
+							<img src="./lifting2.png" alt="lift" id="lifting"></img>
+						</div>
+						<div id="imgBox">
+							{this.state.arms ? (<img src="./arms.png" alt="arms" id="arms"></img>) : (
+								<img src="./arms2.png" alt="arms2" id="arms"></img>)}
+						</div>
+						<div id="imgBox">
+							{this.state.arms ? (<img src="./pushup.png" alt="pushup" id="pushup"></img>) : (
+								<img src="./pushup2.png" alt="pushup" id="top"></img>)}
+						</div>
+					</div>
 					<div id="sloganBox">
-						<div id="slogan">Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
+						<div id="slogan"><img src="./cycling.png" alt="cycling" height="23px" width="23px"></img>Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
 					</div>
 					<div>
 						<div className="container-table">
@@ -161,6 +189,11 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</div>
+				<footer>
+					<div className="refer">
+						<Link to="https://adrianbriones.herokuapp.com/#!/projects" id="white">By Adrian Briones</Link>
+					</div>
+				</footer>
 			</div>
 		)
 	}
