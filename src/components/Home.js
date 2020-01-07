@@ -16,7 +16,8 @@ class Home extends React.Component {
 			step: {},
 			loaded: false,
 			add: false,
-			arms: true
+			arms: true,
+			pushups: true
 		}
 	}
 	componentDidMount = () => {
@@ -50,15 +51,23 @@ class Home extends React.Component {
 	}
 
 	interval = () => {
-    let intervalId = setInterval(this.arms, 1000)
+		let intervalId = setInterval(this.arms, 1000)
+		let intervalId2 = setInterval(this.pushup, 1500)
     this.setState({
-      intervalId: intervalId
+			intervalId: intervalId,
+			intervalId2: intervalId2
     })
 	};
 	
 	arms = () => {
 		this.setState({
 			arms: !this.state.arms
+		})
+	}
+
+	pushup = () => {
+		this.setState({
+			pushups: !this.state.pushups
 		})
 	}
 			
@@ -117,7 +126,7 @@ class Home extends React.Component {
 							<img src="./lifting2.png" alt="lift" id="lifting"></img>
 						</div>
 						<div id="imgBox">
-							{this.state.arms ? (<img src="./pushup.png" alt="pushup" id="pushup"></img>) : (
+							{this.state.pushups ? (<img src="./pushup.png" alt="pushup" id="pushup"></img>) : (
 								<img src="./pushup2.png" alt="pushup" id="top"></img>)}
 						</div>
 					</div>
