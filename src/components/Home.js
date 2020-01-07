@@ -110,11 +110,11 @@ class Home extends React.Component {
 					<h1 className="title">Workout Routine</h1>
 					<div id="imgCont">
 						<div id="imgBox">
-							<img src="./lifting2.png" alt="lift" id="lifting"></img>
-						</div>
-						<div id="imgBox">
 							{this.state.arms ? (<img src="./arms.png" alt="arms" id="arms"></img>) : (
 								<img src="./arms2.png" alt="arms2" id="arms"></img>)}
+						</div>
+						<div id="imgBox">
+							<img src="./lifting2.png" alt="lift" id="lifting"></img>
 						</div>
 						<div id="imgBox">
 							{this.state.arms ? (<img src="./pushup.png" alt="pushup" id="pushup"></img>) : (
