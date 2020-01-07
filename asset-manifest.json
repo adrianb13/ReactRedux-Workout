@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/ReactRedux-Workout/static/css/main.0f719b98.chunk.css",
-    "main.js": "/ReactRedux-Workout/static/js/main.bd4870fa.chunk.js",
-    "main.js.map": "/ReactRedux-Workout/static/js/main.bd4870fa.chunk.js.map",
+    "main.css": "/ReactRedux-Workout/static/css/main.22bb14dc.chunk.css",
+    "main.js": "/ReactRedux-Workout/static/js/main.4b7ac781.chunk.js",
+    "main.js.map": "/ReactRedux-Workout/static/js/main.4b7ac781.chunk.js.map",
     "runtime-main.js": "/ReactRedux-Workout/static/js/runtime-main.578d104a.js",
     "runtime-main.js.map": "/ReactRedux-Workout/static/js/runtime-main.578d104a.js.map",
-    "static/js/2.c89c8c9e.chunk.js": "/ReactRedux-Workout/static/js/2.c89c8c9e.chunk.js",
-    "static/js/2.c89c8c9e.chunk.js.map": "/ReactRedux-Workout/static/js/2.c89c8c9e.chunk.js.map",
+    "static/js/2.038efe9d.chunk.js": "/ReactRedux-Workout/static/js/2.038efe9d.chunk.js",
+    "static/js/2.038efe9d.chunk.js.map": "/ReactRedux-Workout/static/js/2.038efe9d.chunk.js.map",
     "index.html": "/ReactRedux-Workout/index.html",
-    "precache-manifest.ef63e822b31e1d2387144b4d0d853dc0.js": "/ReactRedux-Workout/precache-manifest.ef63e822b31e1d2387144b4d0d853dc0.js",
+    "precache-manifest.43d420db34a1f83bc773eeb904bdeaab.js": "/ReactRedux-Workout/precache-manifest.43d420db34a1f83bc773eeb904bdeaab.js",
     "service-worker.js": "/ReactRedux-Workout/service-worker.js",
-    "static/css/main.0f719b98.chunk.css.map": "/ReactRedux-Workout/static/css/main.0f719b98.chunk.css.map",
-    "static/js/2.c89c8c9e.chunk.js.LICENSE": "/ReactRedux-Workout/static/js/2.c89c8c9e.chunk.js.LICENSE",
-    "static/media/App.css": "/ReactRedux-Workout/static/media/metalWall.2fc07ecc.png"
+    "static/css/main.22bb14dc.chunk.css.map": "/ReactRedux-Workout/static/css/main.22bb14dc.chunk.css.map",
+    "static/js/2.038efe9d.chunk.js.LICENSE": "/ReactRedux-Workout/static/js/2.038efe9d.chunk.js.LICENSE",
+    "static/media/App.css": "/ReactRedux-Workout/static/media/metalWall.2fc07ecc.png",
+    "static/media/swimming.png": "/ReactRedux-Workout/static/media/swimming.56cb7d07.png",
+    "static/media/swimming2.png": "/ReactRedux-Workout/static/media/swimming2.00298f39.png",
+    "static/media/swimming3.png": "/ReactRedux-Workout/static/media/swimming3.a03f2e84.png"
   },
   "entrypoints": [
     "static/js/runtime-main.578d104a.js",
-    "static/js/2.c89c8c9e.chunk.js",
-    "static/css/main.0f719b98.chunk.css",
-    "static/js/main.bd4870fa.chunk.js"
+    "static/js/2.038efe9d.chunk.js",
+    "static/css/main.22bb14dc.chunk.css",
+    "static/js/main.4b7ac781.chunk.js"
   ]
 }
