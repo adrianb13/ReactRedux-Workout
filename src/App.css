@@ -218,7 +218,16 @@ h2 {
 	color: white;
 }
 
+@media (min-width: 1600px){
+	#slogan{
+		animation: ticker2 20s infinite linear;
+	}
+}
+
 @media (max-width: 700px){
+	#slogan{
+		animation: ticker3 20s infinite linear;
+	}
 	.container-table {
 		width: 98%;
 	}
@@ -226,11 +235,11 @@ h2 {
 
 @keyframes lift {
 	0% {
-		height: 40px
+		height: 40px;
 	}
 	60% {
 		padding-top: 0;
-		height: 50px
+		height: 50px;
 	}
 }
 
@@ -246,6 +255,24 @@ h2 {
 @keyframes ticker {
 	from {
 		transform: translate(250%, 0)
+	}
+	to{
+		transform: translate(-100%, 0)
+	}
+}
+
+@keyframes ticker2 {
+	from {
+		transform: translate(350%, 0)
+	}
+	to{
+		transform: translate(-100%, 0)
+	}
+}
+
+@keyframes ticker3 {
+	from {
+		transform: translate(150%, 0)
 	}
 	to{
 		transform: translate(-100%, 0)
