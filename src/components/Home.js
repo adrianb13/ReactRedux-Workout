@@ -7,6 +7,9 @@ import "../App.css";
 
 import Add from "./Add.js";
 import Update from "./Update.js";
+import S1 from "../assets/img/swimming.png";
+import S2 from "../assets/img/swimming2.png";
+import S3 from "../assets/img/swimming3.png";
 
 class Home extends React.Component {
 	constructor(props) {
@@ -17,7 +20,9 @@ class Home extends React.Component {
 			loaded: false,
 			add: false,
 			arms: true,
-			pushups: true
+			pushups: true,
+			swimCount: 0,
+			swim: S1
 		}
 	}
 	componentDidMount = () => {
@@ -32,6 +37,8 @@ class Home extends React.Component {
 	
 	componentWillUnmount = () => {
 		clearInterval(this.state.intervalId);
+		clearInterval(this.state.intervalId2);
+		clearInterval(this.state.intervalId3);
 	}
 		
 	dataLoad = () => {
@@ -53,9 +60,11 @@ class Home extends React.Component {
 	interval = () => {
 		let intervalId = setInterval(this.arms, 1000)
 		let intervalId2 = setInterval(this.pushup, 1500)
+		let intervalId3 = setInterval(this.swimming, 350)
     this.setState({
 			intervalId: intervalId,
-			intervalId2: intervalId2
+			intervalId2: intervalId2,
+			intervalId3: intervalId3
     })
 	};
 	
@@ -69,6 +78,25 @@ class Home extends React.Component {
 		this.setState({
 			pushups: !this.state.pushups
 		})
+	}
+
+	swimming = () => {
+		if(this.state.swimCount === 0) {
+			this.setState({
+				swim: S1,
+				swimCount: 1
+			})
+		} else if(this.state.swimCount === 1) {
+			this.setState({
+				swim: S2,
+				swimCount: 2
+			})
+		} else if(this.state.swimCount === 2) {
+			this.setState({
+				swim: S3,
+				swimCount: 0
+			})
+		}
 	}
 			
 	deleteStep = (step) => {
@@ -119,6 +147,9 @@ class Home extends React.Component {
 					<h1 className="title">Workout Routine</h1>
 					<div id="imgCont">
 						<div id="imgBox">
+							<img src={this.state.swim} alt="swim" id="swim"></img>
+						</div>
+						<div id="imgBox">
 							{this.state.arms ? (<img src="./arms.png" alt="arms" id="arms"></img>) : (
 								<img src="./arms2.png" alt="arms2" id="arms"></img>)}
 						</div>
@@ -131,7 +162,7 @@ class Home extends React.Component {
 						</div>
 					</div>
 					<div id="sloganBox">
-						<div id="slogan"><img src="./cycling.png" alt="cycling" height="23px" width="23px"></img>Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
+						<div id="slogan"><img src="./cycling.png" alt="cycling" id="cycle"></img>Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
 					</div>
 					<div>
 						<div className="container-table">

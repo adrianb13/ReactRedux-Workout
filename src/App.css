@@ -22,12 +22,12 @@ h1 {
 	padding: 20px 0 0 0;
 }
 #imgCont {
-	width: 200px;
+	width: 280px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
+	margin: 0 auto 10px auto;
 }
 #imgBox {
 	height: 50px;
@@ -52,6 +52,16 @@ h1 {
 #top {
 	width: 60px;
 	padding-top: 32px;
+}
+#swim {
+	height: 50px;
+	width: 50px;
+	padding-top: 16px;
+}
+#cycle {
+	height: 30px;
+	width: 30px;
+	margin:0 5px -5px 0;
 }
 #sloganBox {
 	overflow: hidden;
