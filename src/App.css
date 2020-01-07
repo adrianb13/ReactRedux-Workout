@@ -44,6 +44,7 @@ h1 {
 
 /* Table area */
 .container-table {
+	min-height: 300px;
 	width: 80%;
 	background: url("./assets/img/chalkboard.png") no-repeat;
 	background-size: 100% 100%;
@@ -51,6 +52,7 @@ h1 {
 	padding: 20px 0;
 }
 .table {
+	min-width: 100%;
 	border: 3px solid darkblue;
 	border-collapse: collapse;
 	margin: 0 auto;
