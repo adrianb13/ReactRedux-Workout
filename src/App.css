@@ -21,6 +21,12 @@ h1 {
 	margin: 0 0 10px 0;
 	padding: 20px 0 0 0;
 }
+.header {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Animations */
 #imgCont {
 	width: 280px;
 	display: flex;
@@ -62,6 +68,8 @@ h1 {
 	height: 30px;
 	width: 30px;
 	margin:0 5px -5px 0;
+	padding: 5px 0 0 0;
+	animation: cycle 2s infinite linear;
 }
 #sloganBox {
 	overflow: hidden;
@@ -79,11 +87,6 @@ h1 {
 	color: red;
 	animation: pulse 2s infinite;
 }
-.header {
-	text-align: center;
-	font-weight: bold;
-}
-
 
 /* Table area */
 .container-table {
@@ -249,6 +252,21 @@ h2 {
 	}
 	60% {
 		color: white;
+	}
+}
+
+@keyframes cycle {
+	0% {
+		margin: 0 5px -5px 0;
+		padding: 5px 0 0 0;
+	}
+	30% {
+ 		margin: 0 10px 0 0;		
+		padding: 0 0 0 0;
+	}
+	60% {
+		margin: 0 20px -5px 0;
+		padding: 5px 0 0 0;
 	}
 }
 
