@@ -2,8 +2,11 @@ import React from 'react';
 import { Router, Route, Switch} from "react-router-dom";
 import './App.css';
 
-import history from "./history/history.js";
+//import history from "./history/history.js";
+import createBrowserHistory from "history/createBrowserHistory";
 import Home from "./components/Home.js";
+
+const history = createBrowserHistory({ basename: "/ReactRedux-Workout" });
 
 class App extends React.Component {
 	render(){

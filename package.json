@@ -41,5 +41,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "Deployed: https://adrianb13.github.io/ReactRedux-Workout/",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianb13/ReactRedux-Workout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianb13/ReactRedux-Workout/issues"
   }
 }
