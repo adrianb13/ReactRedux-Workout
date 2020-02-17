@@ -49,8 +49,6 @@ class Home extends React.Component {
 				if(this.state.steps.length > 0){
 					this.setState({
 						loaded: true
-					}, () => {
-						console.log("loaded")
 					})
 				}
 			})
