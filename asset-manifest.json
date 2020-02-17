@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ReactRedux-Workout/static/css/main.3ada9440.chunk.css",
-    "main.js": "/ReactRedux-Workout/static/js/main.7f81e2bf.chunk.js",
-    "main.js.map": "/ReactRedux-Workout/static/js/main.7f81e2bf.chunk.js.map",
+    "main.css": "/ReactRedux-Workout/static/css/main.4377d4ea.chunk.css",
+    "main.js": "/ReactRedux-Workout/static/js/main.4629d7c9.chunk.js",
+    "main.js.map": "/ReactRedux-Workout/static/js/main.4629d7c9.chunk.js.map",
     "runtime-main.js": "/ReactRedux-Workout/static/js/runtime-main.578d104a.js",
     "runtime-main.js.map": "/ReactRedux-Workout/static/js/runtime-main.578d104a.js.map",
     "static/js/2.2db4a252.chunk.js": "/ReactRedux-Workout/static/js/2.2db4a252.chunk.js",
     "static/js/2.2db4a252.chunk.js.map": "/ReactRedux-Workout/static/js/2.2db4a252.chunk.js.map",
     "index.html": "/ReactRedux-Workout/index.html",
-    "precache-manifest.6781f892c03163ba9c02d3b4b1bd2ffa.js": "/ReactRedux-Workout/precache-manifest.6781f892c03163ba9c02d3b4b1bd2ffa.js",
+    "precache-manifest.e4b463af894be5bb4a3495a559acf95e.js": "/ReactRedux-Workout/precache-manifest.e4b463af894be5bb4a3495a559acf95e.js",
     "service-worker.js": "/ReactRedux-Workout/service-worker.js",
-    "static/css/main.3ada9440.chunk.css.map": "/ReactRedux-Workout/static/css/main.3ada9440.chunk.css.map",
+    "static/css/main.4377d4ea.chunk.css.map": "/ReactRedux-Workout/static/css/main.4377d4ea.chunk.css.map",
     "static/js/2.2db4a252.chunk.js.LICENSE": "/ReactRedux-Workout/static/js/2.2db4a252.chunk.js.LICENSE",
     "static/media/App.css": "/ReactRedux-Workout/static/media/metalWall.2fc07ecc.png",
     "static/media/swimming.png": "/ReactRedux-Workout/static/media/swimming.56cb7d07.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.578d104a.js",
     "static/js/2.2db4a252.chunk.js",
-    "static/css/main.3ada9440.chunk.css",
-    "static/js/main.7f81e2bf.chunk.js"
+    "static/css/main.4377d4ea.chunk.css",
+    "static/js/main.4629d7c9.chunk.js"
   ]
 }
