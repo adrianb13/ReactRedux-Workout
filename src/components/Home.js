@@ -239,7 +239,7 @@ class Home extends React.Component {
 				<br></br>
 				<footer>
 					<div className="refer">
-						<a href="https://adrianbriones.herokuapp.com/projects" rel="noopener noreferrer" target="_blank" id="color">By Adrian Briones</a>
+						<a href={"https://adrianbriones.herokuapp.com/projects"} rel="noopener noreferrer" target="_blank" id="color">By Adrian Briones</a>
 					</div>
 				</footer>
 			</div>
