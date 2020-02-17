@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actions from "../actions/index.js";
@@ -237,11 +237,11 @@ class Home extends React.Component {
 					</div>
 				</div>
 				<br></br>
-				{/* <footer>
+				<footer>
 					<div className="refer">
-						<Link to="/portfolio" target="_blank" id="color">By Adrian Briones</Link>
+						<a href="https://adrianbriones.herokuapp.com/projects" rel="noopener noreferrer" target="_blank" id="color">By Adrian Briones</a>
 					</div>
-				</footer> */}
+				</footer>
 			</div>
 		)
 	}
