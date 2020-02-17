@@ -3,7 +3,7 @@ import { Router, Route, Switch} from "react-router-dom";
 import "./App.css";
 
 //import history from "./history/history.js";
-import createBrowserHistory from "history/createBrowserHistory";
+import { createBrowserHistory } from "history";
 import Home from "./components/Home.js";
 
 const history = createBrowserHistory({ basename: "/ReactRedux-Workout" });
@@ -15,10 +15,6 @@ class App extends React.Component {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/steps" component={Home} />
-					{/* <Route path="/portfolio" component={() => { 
-					  window.location.href = "https://adrianbriones.herokuapp.com/projects"; 
-					  return null;
-					}}/> */}
 					<Route component={Home} />
 				</Switch>
 			</Router>
