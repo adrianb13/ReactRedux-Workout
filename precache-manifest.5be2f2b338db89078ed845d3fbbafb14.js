@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3ec3af151987c360ffbe2e9e11365aa",
+    "revision": "0a887f2cc4b161d7dd0f99a98c4b2278",
     "url": "/ReactRedux-Workout/index.html"
   },
   {
-    "revision": "3ae6141bf51434c5b597",
-    "url": "/ReactRedux-Workout/static/css/main.0459b6d5.chunk.css"
+    "revision": "9c3902648d4702dcc52c",
+    "url": "/ReactRedux-Workout/static/css/main.83e0d2eb.chunk.css"
   },
   {
     "revision": "ebf1ef5045548edafc52",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactRedux-Workout/static/js/2.149d0376.chunk.js.LICENSE"
   },
   {
-    "revision": "3ae6141bf51434c5b597",
-    "url": "/ReactRedux-Workout/static/js/main.062eb146.chunk.js"
+    "revision": "9c3902648d4702dcc52c",
+    "url": "/ReactRedux-Workout/static/js/main.89fdd039.chunk.js"
   },
   {
     "revision": "eef189297cb227bb7acc",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9f677fac0f142ffdae868bf21b8f91d4",
     "url": "/ReactRedux-Workout/static/media/chalkboard.9f677fac.png"
+  },
+  {
+    "revision": "f2c342fda095392a642a3a0454e53e54",
+    "url": "/ReactRedux-Workout/static/media/gym.f2c342fd.png"
   },
   {
     "revision": "2fc07ecc6ad79460e969f74fbef0331a",
