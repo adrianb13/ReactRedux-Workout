@@ -2,11 +2,19 @@ body {
 	color: white;
 	margin: 0;
 	padding: 0;
-	background: url("./assets/img/metalWall.png");
+	background: url("./assets/img/gym.png");
 }
 .back {
 	height: 100vh;
 	padding-bottom: 50px;
+}
+.metalBox {
+	background: url('./assets/img/metalWall.png');
+}
+.metalWidth {
+	width: 320px;
+	border-radius: 10px;
+	margin: 0 auto;
 }
 h1 {
 	font-family: 'Bebas Neue', cursive;
@@ -158,6 +166,7 @@ a:link, a:visited, a:hover, a:active {
 	margin: 30px auto;
 }
 .bAdd {
+	cursor: pointer;
 	border: 2px solid darkgreen;
 	border-radius: 15px;
 	background: lime;
@@ -198,7 +207,8 @@ textarea {
 #updCont {
 	font-family: 'Bebas Neue', cursive;
 	text-align: center;
-	margin: 0 auto;
+	margin: 30px auto;
+	padding-bottom: 10px;
 }
 h2 {
 	font-size: 30px;
@@ -217,8 +227,12 @@ h2 {
 	text-align: center;
 	margin: 0 auto 10px auto;
 }
-#white {
-	color: white;
+#color {
+	width: 150px;
+	background: black;
+	color: greenyellow;
+	border-radius: 5px;
+	padding: 5px 10px;
 }
 
 @media (min-width: 1600px){

@@ -114,7 +114,8 @@ class Home extends React.Component {
 	
 	updateButton = () => {
 		this.setState({
-			update: !this.state.update
+			update: !this.state.update,
+			add: false
 		})
 	}
 	
@@ -144,26 +145,30 @@ class Home extends React.Component {
 		return(
 			<div className="back">
 				<div>
-					<h1 className="title">Workout Routine</h1>
-					<div id="imgCont">
-						<div id="imgBox">
-							<img src={this.state.swim} alt="swim" id="swim"></img>
+					<div className="metalBox">
+						<h1 className="title">Workout Routine</h1>
+						<div id="imgCont">
+							<div id="imgBox">
+								<img src={this.state.swim} alt="swim" id="swim"></img>
+							</div>
+							<div id="imgBox">
+								{this.state.arms ? (<img src="./arms.png" alt="arms" id="arms"></img>) : (
+									<img src="./arms2.png" alt="arms2" id="arms"></img>)}
+							</div>
+							<div id="imgBox">
+								<img src="./lifting2.png" alt="lift" id="lifting"></img>
+							</div>
+							<div id="imgBox">
+								{this.state.pushups ? (<img src="./pushup.png" alt="pushup" id="pushup"></img>) : (
+									<img src="./pushup2.png" alt="pushup" id="top"></img>)}
+							</div>
 						</div>
-						<div id="imgBox">
-							{this.state.arms ? (<img src="./arms.png" alt="arms" id="arms"></img>) : (
-								<img src="./arms2.png" alt="arms2" id="arms"></img>)}
-						</div>
-						<div id="imgBox">
-							<img src="./lifting2.png" alt="lift" id="lifting"></img>
-						</div>
-						<div id="imgBox">
-							{this.state.pushups ? (<img src="./pushup.png" alt="pushup" id="pushup"></img>) : (
-								<img src="./pushup2.png" alt="pushup" id="top"></img>)}
+						<div id="sloganBox">
+							<div id="slogan"><img src="./cycling.png" alt="cycling" id="cycle"></img>Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
 						</div>
 					</div>
-					<div id="sloganBox">
-						<div id="slogan"><img src="./cycling.png" alt="cycling" id="cycle"></img>Everything You Want Is <span id="red">Outside Of Your Comfort Zone!!!</span></div>
-					</div>
+					
+					
 					<div>
 						<div className="container-table">
 							<table className="table">
@@ -203,35 +208,38 @@ class Home extends React.Component {
 						</div>
 						<div>
 							{this.state.update ? (
-								<Update
-									id= {this.state.step.id}
-									step = {this.state.step}
-									updateButton = {this.updateButton}
-									updateStep = {this.updateStep}
-								>
-								</Update>
+								<div className="metalBox metalWidth">
+									<Update
+										id= {this.state.step.id}
+										step = {this.state.step}
+										updateButton = {this.updateButton}
+										updateStep = {this.updateStep}
+									>
+									</Update>
+								</div>
 							) : (
 							<div>
-							{this.state.add ? (
-								<div id="add">
-									<Add
-										addButton={this.addButton}
-									/>
-									
-								</div>
-							) : (
-								<div id="add">
-									<button className="bAdd" onClick={this.addButton}>Add To Workout</button>
-								</div>
-							)}
+								{this.state.add ? (
+									<div className="metalBox metalWidth" id="add">
+										<Add
+											addButton={this.addButton}
+										/>
+
+									</div>
+								) : (
+									<div id="add">
+										<button className="bAdd" onClick={this.addButton}>Add To Workout</button>
+									</div>
+								)}
 							</div>
 							)}
 						</div>
 					</div>
 				</div>
+				<br></br>
 				<footer>
 					<div className="refer">
-						<Link to="https://adrianbriones.herokuapp.com/#!/projects" id="white">By Adrian Briones</Link>
+						<Link to="https://adrianbriones.herokuapp.com/projects" id="color">By Adrian Briones</Link>
 					</div>
 				</footer>
 			</div>

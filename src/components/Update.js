@@ -49,7 +49,7 @@ class Update extends React.Component {
 	
 	render(){		
 		return(
-			<div className="back">
+			<div>
 				<div id="updCont" onChange={this.stepInfo}>
 					<h2>Updating "{this.props.step.name}"</h2>
 					<div>
