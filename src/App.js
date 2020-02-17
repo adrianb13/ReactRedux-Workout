@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { Router, Route, Switch} from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 //import history from "./history/history.js";
 import createBrowserHistory from "history/createBrowserHistory";
@@ -15,6 +15,10 @@ class App extends React.Component {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/steps" component={Home} />
+					<Route path="/portfolio" component={() => { 
+					     window.location.href = "https://adrianbriones.herokuapp.com/projects"; 
+					     return null;
+					}}/>
 					<Route component={Home} />
 				</Switch>
 			</Router>

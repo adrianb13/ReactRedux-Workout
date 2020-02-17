@@ -239,7 +239,7 @@ class Home extends React.Component {
 				<br></br>
 				<footer>
 					<div className="refer">
-						<Link to="https://adrianbriones.herokuapp.com/projects" id="color">By Adrian Briones</Link>
+						<Link to="/portfolio" target="_blank" id="color">By Adrian Briones</Link>
 					</div>
 				</footer>
 			</div>
