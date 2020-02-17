@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: url("./assets/img/gym.png");
+	background-color: black;
 }
 .back {
 	height: 100vh;
