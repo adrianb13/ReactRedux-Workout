@@ -15,10 +15,10 @@ class App extends React.Component {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/steps" component={Home} />
-					<Route path="/portfolio" component={() => { 
-					     window.location.href = "https://adrianbriones.herokuapp.com/projects"; 
-					     return null;
-					}}/>
+					{/* <Route path="/portfolio" component={() => { 
+					  window.location.href = "https://adrianbriones.herokuapp.com/projects"; 
+					  return null;
+					}}/> */}
 					<Route component={Home} />
 				</Switch>
 			</Router>

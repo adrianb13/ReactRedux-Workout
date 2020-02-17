@@ -237,11 +237,11 @@ class Home extends React.Component {
 					</div>
 				</div>
 				<br></br>
-				<footer>
+				{/* <footer>
 					<div className="refer">
 						<Link to="/portfolio" target="_blank" id="color">By Adrian Briones</Link>
 					</div>
-				</footer>
+				</footer> */}
 			</div>
 		)
 	}
