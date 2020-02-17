@@ -144,16 +144,15 @@ a:link, a:visited, a:hover, a:active {
 #bUpd, #bDel {
 	cursor: pointer;
 	height: 100%;
-	background: deepskyblue;
 	text-align: center;
-	color: black;
+	color: deepskyblue;
 	font-weight: bold;
 	text-decoration: underline;
 	margin: 0;
 	padding: 5px 0;
 }
 #bDel {
-	background: red;
+	color: red;
 }
 
 /* Add Form Area */
